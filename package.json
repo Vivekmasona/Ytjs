@@ -1,12 +1,23 @@
 {
-  "name": "youtube-audio-api",
+  "name": "youtube-audio-streamer",
   "version": "1.0.0",
-  "type": "module",
+  "description": "A self-hosted free API to get direct audio playback URLs from YouTube using yt-dlp.",
+  "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "dev": "nodemon server.js"
   },
+  "keywords": [
+    "youtube",
+    "audio",
+    "yt-dlp",
+    "stream",
+    "express"
+  ],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
     "express": "^4.19.2",
-    "youtubei.js": "^15.0.0"
+    "yt-dlp-wrap": "^2.1.1"
   }
 }
